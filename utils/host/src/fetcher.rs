@@ -581,10 +581,10 @@ impl OPSuccinctDataFetcher {
         })
     }
 
-    /// If the safeDB is activated, use it to fetch the L1 block where the batch including the data
+    /// If the safeDB is activated, use it to fetch the L1 block where the batch containing the data
     /// for the end L2 block was posted. If the safeDB is not activated:
     ///   - If `safe_db_fallback` is `true`, estimate the L1 head based on the L2 block timestamp.
-    ///   - Else, return an error.
+    ///   - Otherwise, return an error.
     pub async fn get_l1_head(
         &self,
         l2_end_block: u64,

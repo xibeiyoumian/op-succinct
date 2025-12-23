@@ -126,7 +126,7 @@ pub fn get_ranges_to_prove_by_gas(
 
 /// Determines the block ranges to be proven based on a set of ranges and a specified interval.
 ///
-/// Given a set block ranges that overlap at most on the boundaries and a range proof interval, this
+/// Given a set of block ranges that overlap at most on the boundaries and a range proof interval, this
 /// function calculates and returns the specific block ranges that need to be proven. Ensures that
 /// all disjoint ranges are fully covered by conditionally inserting a single range smaller than the
 /// range proof interval if necessary.
